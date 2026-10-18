@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-bg: #FAF7F2;
+  --color-sand: #F1EBE1;
+  --color-sand-light: #F8F5F0;
+  --color-card: #FFFFFF;
+  --color-border-warm: #E7DFD2;
+  --color-border-light: #EFE9DE;
+  --color-charcoal: #2B2823;
+  --color-charcoal-muted: #6E675D;
+  --color-driftwood: #B89B7A;
+  --color-driftwood-dark: #9F8263;
+  --color-sage: #8FA9A3;
+  --color-sage-soft: #EDF3F1;
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #2B2823;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF7F2;
+  color: #2B2823;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #2B2823;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom warm layered shadow */
+.shadow-warm-sm {
+  box-shadow: 0 2px 8px -2px rgba(43, 40, 35, 0.04), 0 1px 3px -1px rgba(43, 40, 35, 0.03);
+}
+
+.shadow-warm {
+  box-shadow: 0 12px 32px -6px rgba(43, 40, 35, 0.05), 0 4px 12px -2px rgba(43, 40, 35, 0.03);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 24px 48px -12px rgba(43, 40, 35, 0.08), 0 8px 24px -4px rgba(43, 40, 35, 0.04);
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 2px solid #B89B7A;
+  outline-offset: 3px;
+}
+
+/* Selection color */
+::selection {
+  background-color: #F1EBE1;
+  color: #2B2823;
+}
